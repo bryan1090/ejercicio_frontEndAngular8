@@ -1,0 +1,97 @@
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <h3>Agregar Personas</h3>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label for="">Cédula</label>
+          <input
+          id="cedula"
+            type="text"
+            class="form-control"
+            name="perCedula"
+            [(ngModel)]="persona.perCedula"
+            required
+          />
+
+        </div>
+        <div class="form-group">
+          <label for="">Nombres:</label>
+          <input
+            [(ngModel)]="persona.perNombres"
+            name="perNombres"
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Apellido Paterno:</label>
+          <input
+            type="text"
+            [(ngModel)]="persona.perApellidoPaterno"
+            name="perApellidoPaterno"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Apellido Materno:</label>
+          <input
+            type="text"
+            [(ngModel)]="persona.perApellidoMaterno"
+            name="perApellidoMaterno"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Teléfono Convencional:</label>
+          <input
+            type="text"
+            [(ngModel)]="persona.perTelefonoConvencional"
+            name="perTelefonoConvencional"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Teléfono Celular:</label>
+          <input
+            type="text"
+            [(ngModel)]="persona.perTelefonoCelular"
+            name="perTelefonoCelular"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Correo:</label>
+          <input
+            type="text"
+            [(ngModel)]="persona.perCorreo"
+            name="perCorreo"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Ciudad:</label>
+          <input
+            type="text"
+            [(ngModel)]="persona.perCiudad"
+            name="perCiudad"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Estado Civil:</label>
+          <input
+            type="text"
+            [(ngModel)]="persona.perEstadoCivil"
+            name="perEstadoCivil"
+            class="form-control"
+          />
+        </div>
+
+        <button (click)="Guardar()" class="btn btn-danger">Guardar</button>
+      </form>
+    </div>
+  </div>
+</div>
